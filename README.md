@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+# microservices
 
-You can use the [editor on GitHub](https://github.com/kingschan1204/microservices/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+> 我的微服务架构探索之路,接下来所有内容围绕spring cloud 总结
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#什么是微服务？
 
-### Markdown
+>`微服务`一词来源于 Martin Fowler的名为Microservices的博文，文章地址：[http://martinfowler.com/articles/microservices.html](https://martinfowler.com/articles/microservices.html) 通俗的讲`微服务`就是系统架构上的一种设计风格，它的思想是将一个独立的系统拆分成多个小型服务，这些服务在各自独立的进程中运行，服务之间基本http restful api 或者消息中间件通信协作，被拆分成的小服务都围绕着系统中的某一项或者一些耦合度较高的业务功能进行构建（每个服务是独立部署的）由于有了轻量级的通信协议作为基础，所以这些微服务可以使用不同的语言来编写。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# 微服务组件
+![](https://kingschan1204.github.io/microservices/res/microservices.png )
 
-```markdown
-Syntax highlighted code block
+# 组件简述
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kingschan1204/microservices/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+|组件|简述|备注|
+|-|-|-|
+|Eureka|微服务注册中心|
+|Ribbon|微服务负载均衡|
+|Hystrix|微服务容错保护|
+|Feign|微服务声明式服务调用|
+|Zuul|微服务API网关|
+|Config|微服务分布式配置中心|
+|Bus|微服务消息总线|
+|Stream|微服务消息驱动|
+|Sleuth|微服务分布式跟踪|
