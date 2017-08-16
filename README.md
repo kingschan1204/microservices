@@ -42,6 +42,6 @@
 |Feign|微服务声明式服务调用|
 |Zuul|微服务API网关|
 |Config|微服务分布式配置中心|
-|Bus|微服务消息总线|
+|Bus|微服务消息总线|[RabbitMQ安装](https://github.com/kingschan1204/microservices/blob/master/bus/centos7-install-rabbitmq.md)
 |Stream|微服务消息驱动|
 |Sleuth|微服务分布式跟踪|
