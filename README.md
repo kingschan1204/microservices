@@ -69,3 +69,7 @@
 |Bus|微服务消息总线|[RabbitMQ安装](https://github.com/kingschan1204/microservices/blob/master/bus/centos7-install-rabbitmq.md)
 |Stream|微服务消息驱动|
 |Sleuth|微服务分布式跟踪|
+
+# Spring Boot相关
+
+* [jvisualVM通过JMX监控远程JVM](https://github.com/kingschan1204/microservices/blob/master/spring-boot/jvisualvm-jmx-remote.md)
