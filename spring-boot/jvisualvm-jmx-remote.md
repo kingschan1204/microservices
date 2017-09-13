@@ -16,6 +16,13 @@
 nohup java -Djava.rmi.server.hostname=192.168.10.232 -Dcom.sun.management.jmxremote.port=22222 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -jar eureka-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer1 &
 ```
 
+## Docker下的命令
+
+```
+java -Xmx1g -Djava.rmi.server.hostname=docker母机IP -Dcom.sun.management.jmxremote.port=9090 -Dcom.sun.management.jmxremote.rmi.port=9090 -Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote=true -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -jar /home/work/project.jar
+```
+
+
 # 效果
 
  打开jvisualVM > 文件 > 添加JMX链接 > ip地址:端口
